@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "seethrough",
+  "version": "${version}",
+  "name": "SeeThrough",
+  "description": "Block ESP and freecam.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.seethrough.SeeThrough"]
+  },
+  "mixins": ["seethrough.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
