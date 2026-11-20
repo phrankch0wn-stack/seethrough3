@@ -39,6 +39,7 @@ public class SeeThrough implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        ChunkScan.init();
         espKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
             "key.seethrough.esp", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_J, "category.seethrough"));
         camKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
